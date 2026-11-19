@@ -26,10 +26,11 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Instalar y actualizar pip
+        run: python -m pip install --upgrade pip
+
       - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          pip install pytest
+        run: pip install -r requirements.txt
 
       - name: Ejecutar pruebas
         run: python -m pytest pruebas.py -v
