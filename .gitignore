@@ -1,0 +1,13 @@
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Cache de Pytest
+.pytest_cache/
+
+# Entornos virtuales
+venv/
+.venv/
+
+# Archivos de configuracion local
+.env
